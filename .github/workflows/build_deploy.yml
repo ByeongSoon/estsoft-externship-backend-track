@@ -42,13 +42,15 @@ jobs:
         push: true
         tags: ${{env.NAME}}/${{env.REPO}}:latest
         
-  deploy:
-    needs: build
-    name: Deploy
-    runs-on: [ self-hosted, label-development ] 
-    steps:
+# AWS EC2 서버 프리티어 종료에 따른 배포 주석처리
+
+#   deploy:
+#     needs: build
+#     name: Deploy
+#     runs-on: [ self-hosted, label-development ] 
+#     steps:
     
-      - name: deploy run 
-        run: |
-          sudo sh /home/ec2-user/run.sh
+#       - name: deploy run 
+#         run: |
+#           sudo sh /home/ec2-user/run.sh
        
