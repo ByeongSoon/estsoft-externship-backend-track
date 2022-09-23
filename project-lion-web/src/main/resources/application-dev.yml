@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        format_sql : true # sql 예쁘게 출력
+        default_batch_fetch_size: 1000
+
+    show-sql: true  # sql 출력
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/lionshop?characterEncoding=UTF-8&useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+
+file:
+  upload:
+    path: /Users/jang/shop/  # 윈도우파일 경로 예시 : C:/shop/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+    <body>
+        <th:block layout:fragment="content">
+            <div class="content">
+                <div class="container center_div w-50 mt-4">
+
+                    <form th:action="@{/register}" th:object="${memberRegisterDto}" role="form" method="post">
+
+                        <div class="form-group mb-3">
+                            <label for="name">이름</label>
+                            <input type="text" th:field="*{name}" class="form-control" placeholder="이름을 입력해주세요" id="name" name="name" value="">
+                            <p class="field-error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="email">이메일주소</label>
+                            <input type="email" th:field="*{email}" class="form-control" placeholder="이메일을 입력해주세요" id="email" name="email" value="">
+                            <p class="field-error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</p>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label th:for="password">비밀번호</label>
+                            <input type="password" th:field="*{password}" class="form-control" placeholder="비밀번호 입력" id="password" name="password" value="">
+                            <div th:if="${#fields.hasErrors('password')}" th:each="msg: ${#fields.errors('password')}">
+                                <p class="field-error" th:text="${msg}"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label th:for="confirmPassword">비밀번호 확인</label>
+                            <input type="password" class="form-control" placeholder="비밀번호 재입력" id="password2" name="confirmPassword" value="">
+
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <p class="field-error" th:text="${errorMessage}"></p>
+                            <button type="submit" class="btn btn-primary" style="">회원 가입</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </th:block>
+    </body>
+</html>
