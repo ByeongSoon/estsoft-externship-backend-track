@@ -2,7 +2,8 @@ name: project-lion-api
 
 on: 
   push:
-    branches: [ develop ]
+#     branches: [ develop ]
+    branches: [ main ]
     
 env:
   NAME: qudtns1223
