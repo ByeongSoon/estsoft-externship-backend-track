@@ -1,8 +1,12 @@
 # 🦁멋쟁이사자처럼X이스트소프트 백엔드 개발자 익스턴십 1기
 
-멋쟁이 사자처럼과 이스트소프트가 함께 진행한 미션 중심형 온라인 인턴십 
+멋쟁이 사자처럼과 이스트소프트가 함께 진행한 미션 중심형 온라인 인턴십
 
-백엔드 개발자 익스턴십 1기에서 🏅최우수 수료생🏅 선발
+ - 백엔드 개발자 익스턴십 1기에서 🏅최우수 수료생🏅 선발
+
+실제 익스턴십 프로잭트는 fork 한 뒤 진행했었는데 원본 저장소가 private로 지정되어 있어 fork한 나의 Repository도 public으로 변경할 수 없었기에 별도로 Repository를 만들었다.
+
+익스턴십 진행중 커밋과 PR 내용은 아래의 History에 스크린샷으로 정리해두었다.
 
 ## 🤔 회고
 
@@ -18,16 +22,34 @@
 
 ## History
 
-### Week 1
+### 1주차
 
-<img src="/images/week1_1.png"  width="700" height="500">
+<img src="/images/week1_1.png"  width="700" height="550">
 <img src="/images/week1_2.png"  width="700" height="500">
 
-### Week 2
+### 2주차
+
 <img src="/images/week2_1.png"  width="700" height="300">
+<img src="/images/week2_2.png"  width="700" height="600">
+<img src="/images/week2_3.png"  width="700" height="900">
 
-### Week 3
+### 3주차
 
-### Week 4
+<img src="/images/week3_1.png"  width="700" height="550">
+<img src="/images/week3_2.png"  width="700" height="800">
+<img src="/images/week3_3.png"  width="700" height="900">
 
-### Week 5
+### 4주차
+
+<img src="/images/week4_1.png"  width="700" height="600">
+<img src="/images/week4_2.png"  width="700" height="900">
+
+### 5주차
+
+<img src="/images/week5_1.png"  width="700" height="600">
+<img src="/images/week5_2.png"  width="700" height="800">
+
+### etc
+
+<img src="/images/projects_1.png"  width="700" height="300">
+<img src="/images/projects_2.png"  width="700" height="300">
